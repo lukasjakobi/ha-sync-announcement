@@ -4,10 +4,10 @@ This repository contains a script for a home automation system that enables text
 
 ## Badges
 
-[![GitHub issues](https://img.shields.io/github/issues/lukasjakobi/ha-sync-announcements)](https://github.com/lukasjakobi/ha-sync-announcements/issues)
-[![GitHub forks](https://img.shields.io/github/forks/lukasjakobi/ha-sync-announcements)](https://github.com/lukasjakobi/ha-sync-announcements/network)
-[![GitHub stars](https://img.shields.io/github/stars/lukasjakobi/ha-sync-announcements)](https://github.com/lukasjakobi/ha-sync-announcements/stargazers)
-[![GitHub license](https://img.shields.io/github/license/lukasjakobi/ha-sync-announcements)](https://github.com/lukasjakobi/ha-sync-announcements/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/issues)
+[![GitHub forks](https://img.shields.io/github/forks/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/network)
+[![GitHub stars](https://img.shields.io/github/stars/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/stargazers)
+[![GitHub license](https://img.shields.io/github/license/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/blob/master/LICENSE)
 
 ## Inputs
 
@@ -59,4 +59,4 @@ Contributions are what make the open source community such an amazing place to l
 
 Lukas Jakobi - lukas@jakobi.io
 
-Project Link: [https://github.com/lukasjakobi/ha-sync-announcements](https://github.com/lukasjakobi/ha-sync-announcements)
+Project Link: [https://github.com/lukasjakobi/ha-sync-announcement](https://github.com/lukasjakobi/ha-sync-announcement)
