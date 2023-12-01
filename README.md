@@ -1,6 +1,6 @@
 # Home Automation TTS Script
 
-This repository contains a script for a home automation system that enables text-to-speech (TTS) messaging across multiple media player entities. It offers features like caching, language selection, volume control, and the ability to reset volume after message delivery.
+This repository contains a script for [Home Assistant](https://www.home-assistant.io/) that enables text-to-speech (TTS) messaging across multiple media player entities. It offers features like caching, language selection, volume control, and the ability to reset volume after message delivery.
 
 ## Badges
 
