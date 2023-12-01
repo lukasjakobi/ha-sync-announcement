@@ -10,7 +10,7 @@ cache = data.get('cache') or True
 # optional - specify the language for the tts model (default: en-US)
 language = data.get('language') or 'en-US'
 
-# optional - specify a volume to set to all media_players before playing the tts message (min: 0, max: 1, step: 0.01, default: not set)
+# optional - specify a volume to set to all media_players before playing the tts message (min: 0, max: 1, step: 0.01, default: None)
 volume = data.get('volume') or None
 
 # optional - specify if the volume should be reset to the previous state after the tts message (true/false, default: false)
