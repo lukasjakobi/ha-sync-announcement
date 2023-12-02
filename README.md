@@ -30,13 +30,19 @@ A- Navigate to the "Automations" section.
 - Enter `https://github.com/lukasjakobi/ha-sync-announcement` into the "Repository" field.
 - Choose `Python Script` as the category and click "Add."
 - The repository will appear in you automations overview, click on the repository and install it via the button on the bottom right
-- Run the service `python_script.reload` or reload your Home Assistant instance
+- Run the service `python_script.reload` or restart your Home Assistant instance
 
 ### Manual Installation
 
 - Download the `sync_announcements.py` file.
 - Copy the file into the `homeassistant/python_scripts` folder in your Home Assistant installation.
-- Run the service `python_script.reload` or reload your Home Assistant instance
+- Run the service `python_script.reload` or restart your Home Assistant instance
+
+### Enabling UI support
+
+- Download the `services.yaml` file.
+- Add the file content into the `homeassistant/python_scripts/services.yaml` file, create the file if it is not present.
+- Run the service `python_script.reload` or restart your Home Assistant instance
 
 ## Running the Script
 - Create a service call within Home Assistant to execute the script. 

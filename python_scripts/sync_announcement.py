@@ -4,7 +4,7 @@ class SyncAnnouncement:
         self.data = data
 
     def run(self):
-        # Extracting data
+        # extracting data
         media_players = self.data.get('media_players')
         message = self.data.get('message')
         language = self.data.get('language', 'en-US')
