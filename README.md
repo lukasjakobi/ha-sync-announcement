@@ -1,4 +1,4 @@
-# Home Automation TTS Script
+# Sync Announcement - Home Assistant TTS Script
 
 [![GitHub issues](https://img.shields.io/github/issues/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/issues)
 [![GitHub forks](https://img.shields.io/github/forks/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/network)
