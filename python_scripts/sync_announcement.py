@@ -7,10 +7,10 @@ class SyncAnnouncement:
         # Extracting data
         media_players = self.data.get('media_players')
         message = self.data.get('message')
-        cache = self.data.get('cache', True)
         language = self.data.get('language', 'en-US')
-        volume = self.data.get('volume')
+        volume = self.data.get('volume', None)
         volume_reset = self.data.get('volume_reset', False)
+        cache = self.data.get('cache', True)
 
         states_before_run = {}
 
