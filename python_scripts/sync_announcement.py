@@ -1,8 +1,7 @@
-class MediaPlayerControl:
+class SyncAnnouncement:
     def __init__(self, hass, data):
         self.hass = hass
         self.data = data
-
 
     def run(self):
         # Extracting data
@@ -13,12 +12,13 @@ class MediaPlayerControl:
         volume = self.data.get('volume')
         volume_reset = self.data.get('volume_reset', False)
 
-        media_player_states_before_run = {}
+        states_before_run = {}
 
-        # store the volume level of all media_players before running the script if specified
+        # store the volume level of all media_players
+        # before running the script if specified
         if volume_reset:
             for entity_id in media_players:
-                media_player_states_before_run[entity_id] = (
+                states_before_run[entity_id] = (
                     self.hass.states.get(entity_id).attributes['volume_level']
                 )
 
@@ -39,7 +39,7 @@ class MediaPlayerControl:
 
         # set respective previous volume to all media_players if specified
         if volume_reset:
-            for entity_id, previous_volume in media_player_states_before_run.items():
+            for entity_id, previous_volume in states_before_run.items():
                 self.hass.services.call('media_player', 'volume_set', {
                     'entity_id': entity_id,
                     'volume_level': previous_volume,
