@@ -1,0 +1,45 @@
+sync_announcement:
+  name: Sync Announcement
+  description: Sync text-to-speech (TTS) messages across multiple media player entities
+  fields:
+    media_players:
+      name: Media Players
+      description: The media player entities to sync TTS messages to
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: media_player
+    message:
+      name: Message
+      description: The TTS message to sync to the media players
+      selector:
+        text:
+    volume:
+      name: Volume
+      description: The volume to set the media player to when playing the TTS message
+      selector:
+        number:
+          min: 0
+          max: 1
+          step: 0.01
+          mode: slider
+          unit_of_measurement: "%"
+    language:
+      name: Language
+      description: The language to use when playing the TTS message (e.g  en-US, en-GB, fr-FR, de-DE etc.)
+      selector:
+        text:
+          default: en-US
+    volume_reset:
+      name: Volume Reset
+      description: Whether to reset the volume to its previous value after playing the TTS message
+      selector:
+        boolean:
+          default: false
+    cache:
+      name: Cache
+      description: Whether to cache the TTS message
+      selector:
+        boolean:
+          default: true
