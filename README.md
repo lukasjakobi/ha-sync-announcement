@@ -1,8 +1,7 @@
 # Sync Announcement - Home Assistant TTS Script
 
-[![GitHub issues](https://img.shields.io/github/issues/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/issues)
-[![GitHub forks](https://img.shields.io/github/forks/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/network)
-[![GitHub stars](https://img.shields.io/github/stars/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/stargazers)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/lukasjakobi/ha-sync-announcement)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/lukasjakobi/ha-sync-announcement)
 [![GitHub license](https://img.shields.io/github/license/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/blob/master/LICENSE)
 
 This repository contains a [Home Assistant](https://www.home-assistant.io/) [Python Script](https://www.home-assistant.io/integrations/python_script/) that enables text-to-speech (TTS) messaging across multiple media player entities. It offers features like caching, language selection, volume control, and the ability to reset volume after message delivery.
