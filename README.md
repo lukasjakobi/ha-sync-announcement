@@ -24,7 +24,7 @@ To use this script in your Home Assistant environment, you can either download i
 ### Installation via HACS Custom Repository
 
 - Go to HACS in your Home Assistant interface.
-A- Navigate to the "Automations" section.
+- Navigate to the "Automations" section.
 - Click the three dots in the top right corner and select "Custom repositories."
 - Enter `https://github.com/lukasjakobi/ha-sync-announcement` into the "Repository" field.
 - Choose `Python Script` as the category and click "Add."
