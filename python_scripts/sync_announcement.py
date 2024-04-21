@@ -24,7 +24,7 @@ try:
     # specify if the volume should be reset to the previous state after the
     # tts message
     # optional - true/false, default: false
-    volume_reset = data.get('volume_reset') or False
+    volume_reset = data.get('volume_reset') or True
 
     # store the volume level of all media_players before running the script if
     # specified
