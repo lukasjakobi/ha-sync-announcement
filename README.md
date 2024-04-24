@@ -3,7 +3,7 @@
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/lukasjakobi/ha-sync-announcement)
 [![GitHub license](https://img.shields.io/github/license/lukasjakobi/ha-sync-announcement)](https://github.com/lukasjakobi/ha-sync-announcement/blob/master/LICENSE)
 
-This repository contains a [Home Assistant](https://www.home-assistant.io/) [Python Script](https://www.home-assistant.io/integrations/python_script/) that enables text-to-speech (TTS) messaging across multiple media player entities. It offers features like caching, language selection, volume control, and the ability to reset volume after message delivery.
+This repository contains a [Home Assistant](https://www.home-assistant.io/) [Python Script](https://www.home-assistant.io/integrations/python_script/) that enables text-to-speech (TTS) messaging across multiple media player entities. It offers features like caching, language selection and volume control (including automatically resetting the volume after the announcement to the previous state).
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lukasjakobi&repository=ha-sync-announcement&category=automations)
 
@@ -26,7 +26,7 @@ This repository contains a [Home Assistant](https://www.home-assistant.io/) [Pyt
 | `message`       | String  | The text-to-speech message to be played.                                                |
 | `language`      | String  | Optional. Sets the language of the TTS message (default: `'en-US'`).                       |
 | `volume`        | Float   | Optional. Specifies a volume level for the message (min: 0, max: 1, default: `None`).  |
-| `volume_reset`  | Boolean | Optional. Resets the volume to its previous state after the message (default: `False`). |
+| `volume_reset`  | Boolean | Optional. Resets the volume to its previous state after the message (default: `True`). |
 | `cache`         | Boolean | Optional. Enables or disables caching of the TTS message (default: `True`).            |
 
 ## Usage

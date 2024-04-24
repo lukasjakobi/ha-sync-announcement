@@ -36,7 +36,7 @@ sync_announcement:
       description: Whether to reset the volume to its previous value after playing the TTS message
       selector:
         boolean:
-          default: false
+          default: true
     cache:
       name: Cache
       description: Whether to cache the TTS message

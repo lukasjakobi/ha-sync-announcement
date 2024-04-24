@@ -24,11 +24,11 @@ try:
     # specify if the volume should be reset to the previous state after the
     # tts message
     # optional - true/false, default: false
-    volume_reset = data.get('volume_reset') or False
+    volume_reset = data.get('volume_reset') or True
 
     # store the volume level of all media_players before running the script if
     # specified
-    if volume_reset:
+    if volume_reset and volume is not None:
         media_player_states_before_run = {}
         for entity_id in media_players:
             media_player_states_before_run[entity_id] = (
@@ -51,7 +51,7 @@ try:
     })
 
     # set respective previous volume to all media_players if specified
-    if volume_reset:
+    if volume_reset and volume is not None:
         for entity_id, prev_volume in media_player_states_before_run.items():
             hass.services.call('media_player', 'volume_set', {
                 'entity_id': entity_id,
