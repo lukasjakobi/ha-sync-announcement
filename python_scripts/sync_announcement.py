@@ -63,6 +63,6 @@ def run(hass: HomeAssistant):
 
 
 try:
-    run(hass) # type: ignore
+    run(hass)  # type: ignore
 except Exception as e:
     log_error("**An unhandled error has occurred.**\n\n{}".format(e))
