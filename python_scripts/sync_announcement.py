@@ -1,30 +1,33 @@
+from homeassistant.core import HomeAssistant
+
+
 def log_error(logger, message):
     logger.error(f"Sync Announcement: {message}")
 
 
-try:
+def run(hass: HomeAssistant):
     # list of media_player entities
-    media_players = data.get('media_players')
+    media_players = hass.data.get('media_players')
 
     # the message to play
-    message = data.get('message')
+    message = hass.data.get('message')
 
     # use caching mechanisms
     # optional - true/false, default: true
-    cache = data.get('cache') or True
+    cache = hass.data.get('cache') or True
 
     # specify the language for the tts model
     # optional - default: en-US
-    language = data.get('language') or 'en-US'
+    language = hass.data.get('language') or 'en-US'
 
     # specify a volume to set to all media_players before playing the message
     # optional - min: 0, max: 1, step: 0.01, default: None
-    volume = data.get('volume') or None
+    volume = hass.data.get('volume') or None
 
     # specify if the volume should be reset to the previous state after the
     # tts message
     # optional - true/false, default: false
-    volume_reset = data.get('volume_reset') or True
+    volume_reset = hass.data.get('volume_reset') or True
 
     # store the volume level of all media_players before running the script if
     # specified
@@ -57,5 +60,9 @@ try:
                 'entity_id': entity_id,
                 'volume_level': prev_volume,
             })
+
+
+try:
+    run(hass) # type: ignore
 except Exception as e:
     log_error("**An unhandled error has occurred.**\n\n{}".format(e))
