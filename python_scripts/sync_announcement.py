@@ -2,8 +2,8 @@ from homeassistant.core import HomeAssistant
 from logging import Logger
 
 
-def log_error(logger: Logger, message: str, exception: Exception):
-    logger.error(message, exception)
+def log_error(logger: Logger, exception: Exception):
+    logger.error("An unhandled error has occurred", exception)
 
 
 def run(hass: HomeAssistant):
@@ -66,4 +66,4 @@ def run(hass: HomeAssistant):
 try:
     run(hass)  # type: ignore
 except Exception as exception:
-    log_error(logger, "An unhandled error has occurred", exception)  # type: ignore
+    log_error(logger, exception)  # type: ignore
