@@ -1,8 +1,9 @@
 from homeassistant.core import HomeAssistant
+from logging import Logger
 
 
-def log_error(logger, message):
-    logger.error(f"Sync Announcement: {message}")
+def log_error(logger: Logger, message: str, exception: Exception):
+    logger.error(message, exception)
 
 
 def run(hass: HomeAssistant):
@@ -64,5 +65,5 @@ def run(hass: HomeAssistant):
 
 try:
     run(hass)  # type: ignore
-except Exception as e:
-    log_error("**An unhandled error has occurred.**\n\n{}".format(e))
+except Exception as exception:
+    log_error(logger, "An unhandled error has occurred", exception)  # type: ignore
